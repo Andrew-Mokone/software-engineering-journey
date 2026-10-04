@@ -63,3 +63,57 @@ for (int i = 0; i < numbers.Length; i++)
     }
 }
 
+// Lesson 8 — Lists
+
+List<int> numbers = new List<int>();
+
+numbers.Add(10);
+numbers.Add(20);
+numbers.Add(30);
+numbers.Add(40);
+
+Console.WriteLine(numbers.Count);
+
+List<string> names = new List<string>();
+
+names.Add("Andrew");
+names.Add("John");
+names.Add("Peter");
+
+names.Remove("John");
+
+Console.WriteLine(names.Count);
+Console.WriteLine(names[1]);
+
+List<string> names = new List<string>();
+
+names.Add("Andrew");
+names.Add("John");
+names.Add("Peter");
+names.Add("Sarah");
+
+names.RemoveAt(1);
+
+for (int i = 0; i < names.Count; i++)
+{
+    Console.WriteLine(names[i]);
+}
+
+List<string> names = new List<string>();
+
+names.Add("Andrew");
+names.Add("John");
+names.Add("Peter");
+
+Console.WriteLine(names.Contains("John"));
+Console.WriteLine(names.Contains("Sarah"));
+
+List<string> names = new List<string>();
+
+names.Add("Andrew");       // Add
+names.Remove("Andrew");    // Remove by value
+names.RemoveAt(0);         // Remove by index
+names.Count;               // Number of items
+names[0];                  // Access an item
+names.Contains("Andrew")   // return a boolean
+
